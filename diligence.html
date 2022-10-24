@@ -156,6 +156,12 @@ Negative Listing Check functionality
 Negative Listing Check functionality
 </div>
 
+<hr>
+
+<button onclick="worldcheck()" class="w-100 p-2 btn btn-warning">World Check/UN Sanctionsk</button>
+<div id="worldcheck" style="display:none; length:100%;">
+World Check/UN Sanctions
+</div>
 
 
 
@@ -186,6 +192,18 @@ function amlcheck() {
 }
 
 
+  
+function worldcheck() {
+  var x = document.getElementById("worldcheck");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+  
+  
+  
 
 function NegativeStatus() {
   var x = document.getElementById("NegativeStatus");
