@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kushpedia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  
+  
+  </head>
+  <body>
+   <br/>
+<table style="white-space:nowrap;">
+    <tr>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+<td>
+<img  class="img-fluid" src="images/logo.png" alt="equity logo" >
+</td>
+
+
+<td>
+<table style="white-space:nowrap;">
+    <tr>
+        <td>User Id:</td><td><input class="form-control" type="text" value="HW33196" aria-label="Disabled input example" disabled readonly>
+        </td>
+    </tr>
+    <tr>
+        <td>Branch Code:</td><td><input class="form-control" type="text" value="131" aria-label="Disabled input example" disabled readonly>
+        </td>
+    </tr>
+        <tr>
+        <td>Branch Name:</td><td><input class="form-control" type="text" value="Eldama Ravine" aria-label="Disabled input example" disabled readonly>
+        </td>
+    </tr>
+   
+</table>
+</td>
+
+
+
+
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+
+</td>
+
+
+<td>
+    <table>
+    <tr>
+        <td>Employer Name:</td><td><input class="form-control" type="text" value="Teacher Service Commission" aria-label="Disabled input example"  disabled readonly>
+        </td>
+    </tr>
+    <tr>
+        <td>Customer Name:</td><td><input class="form-control" type="text" value="DAVID KIMUTAI KIPTOO" aria-label="Disabled input example" disabled readonly>
+        </td>
+    </tr>
+    <tr>
+        <td>Total Exposure:</td><td><input class="form-control" type="text" value="1,900,000" aria-label="Disabled input example" disabled readonly>
+        </td>
+    </tr>
+</table>
+</td>
+
+
+
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+
+</td>
+
+
+
+<td> 
+
+<table style="white-space:nowrap;">
+<tr>
+        <td>Sourcing Channel:</td><td><input class="form-control" type="text" value="Branch Walk In" aria-label="Disabled input example" disabled readonly>
+        </td>
+    </tr>
+<tr>
+        <td>Date of Application:</td><td><input class="form-control" type="text" value="18 October, 2022" aria-label="Disabled input example" disabled readonly>
+        </td>
+    </tr>
+    <tr>
+        <td>Application Id:</td><td><input class="form-control" type="text" value="LA5120236748882" aria-label="Disabled input example" disabled readonly>
+        </td>
+    </tr>
+  
+   
+    
+</table>
+
+</td>
+
+
+
+</tr>
+</table>
+
+<nav class="navbar navbar-expand-lg bg-light" >
+  <table style="white-space:nowrap;">
+    <tr>
+    <td>
+   <a href="summary.html" class="btn btn-warning" role="button" >Summary</a></td>
+        <td ><a href="limit.html" class="btn btn-warning" role="button" >Check Limit</a></td>
+        <td><a href="borrower.html" class="btn btn-warning" role="button" >Borrower Details</a></td>
+    
+        <td><a href="diligence.html" class="btn btn-info" role="button" >Due Diligence</a></td>
+        <td><a href="loan.html" class="btn btn-warning" role="button" >Loan Details</a></td>
+        
+        <td><a href="income.html" class="btn btn-warning" role="button" >Income Analysis</a></td>
+        
+        <td><a href="collateral.html" class="btn btn-warning" role="button" >Collateral & Conditions</a></td>
+    
+        <td><a href="proposal.html" class="btn btn-warning" role="button" >Proposal Summary</a></td>
+        <td><a href="document.html" class="btn btn-warning" role="button" >Documents and Checklist</a></td>
+        <td><a href="fields.html" class="btn btn-warning" role="button" >FI, E & S  </a></td>
+        <td><a href="decision.html" class="btn btn-warning" role="button" >Decision/Action</a></td>
+        <td><a href="mis.html" class="btn btn-warning" role="button" >MIS</a></td>
+        <td><a href="agency.html" class="btn btn-warning" role="button" >Agency Management</a>
+      
+      
+      </td>
+      
+
+</tr>
+</table>
+</nav>
+</table>
+    <div class="limitwrapper" style=".clicker width:100%;height:auto;background-color:skyblue;outline:none;">
+
+DUE DILIGENCE
+<hr>
+<button onclick="duediligence()" class="w-100 p-2 btn btn-warning"><b>CRB Checks</b></button>
+<div id="duediligence" style="display:none; length:100%;">
+View CRB from Metropol, Credit Info and Trans union
+</div>
+
+<hr>
+
+<button onclick="amlcheck()" class="w-100 p-2 btn btn-warning">AML Check</button>
+<div id="amlcheck" style="display:none; length:100%;">
+Negative Listing Check functionality
+</div>
+
+<hr>
+<button onclick="NegativeStatus()" class="w-100 p-2 btn btn-warning">Negative Listing Check</button>
+<div id="NegativeStatus" style="display:none; length:100%;">
+Negative Listing Check functionality
+</div>
+
+
+
+
+
+
+
+</div>
+<x-footer />
+<script>
+function duediligence() {
+  var x = document.getElementById("duediligence");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+function amlcheck() {
+  var x = document.getElementById("amlcheck");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+function NegativeStatus() {
+  var x = document.getElementById("NegativeStatus");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+</script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
