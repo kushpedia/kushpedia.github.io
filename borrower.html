@@ -135,9 +135,14 @@
 </table>
     
   
-  <div class="limitwrapper" style=".clicker width:100%;height:auto;background-color:skyblue;outline:none;">
+ <div class="limitwrapper" style=".clicker width:100%;height:auto;background-color:skyblue;outline:none;">
 <br/>
-Borrower Details
+
+
+<hr>
+<button onclick="customerdetails()" class=" w-100 p-2 btn btn-warning"><b>Customer Details</b></button>
+<div id="customerdetails" style="display:none; length:100%;">
+
 <table>
 <tr>
 <td>Search Parameter</td><td>
@@ -154,12 +159,16 @@ Borrower Details
 </tr>
 </table>
 <br/>   
-<hr>
+
 ALL Customer details fetched  from CBS <br/>and the ones to be entered manually should appear hear
+
+</div>
+<br/>
+
 <hr>
-<button onclick="myFunctionloandetails()" class=" w-100 p-2 btn btn-warning"><b>Party Details</b></button>
+<button onclick="myFunctionloandetails()" class=" w-100 p-2 btn btn-warning"><b>Related Party Details</b></button>
 <div id="loandetails" style="display:none; length:100%;">
-Capture Party Details and Related party details
+ Related party details
 
 </div>
 <br/>
@@ -207,6 +216,15 @@ Capture address
 <x-footer />
 
 <script>
+function customerdetails() {
+  var x = document.getElementById("customerdetails");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 function myFunctionloandetails() {
   var x = document.getElementById("loandetails");
   if (x.style.display === "none") {
@@ -215,6 +233,8 @@ function myFunctionloandetails() {
     x.style.display = "none";
   }
 }
+
+
 
 
 
