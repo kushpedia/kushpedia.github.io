@@ -149,26 +149,35 @@ EQUILATOR
 <div id="statementfetch" style="display:none; length:100%;">
 Fetch Account Statement
 </div>
-
 <hr>
-<button onclick="otherincomes()" class="w-100 p-2 btn btn-warning">Other Incomes</button>
-<div id="otherincomes" style="display:none; length:100%;">
-Capture Other Incomes
+<button onclick="earnings()" class="w-100 p-2 btn btn-warning">Earnings</button>
+<div id="earnings" style="display:none; length:100%;">
+Capture All earning Here
+<hr>
+<button onclick="salaryadvanceearnings()" class="w-50 p-2 btn btn-info btn-warning" style="margin-left:40px;">Salary Advance</button>
+<div id="salaryadvanceearnings" style="display:none; length:100%; margin-left:20px;">
+Salary Advance
+</div>
+<hr>
+<button onclick="pensionearning()" class="w-50 p-2 btn btn-info btn-warning" style="margin-left:40px;">Pension</button>
+<div id="pensionearning" style="display:none; length:100%; margin-left:20px;">
+Pension
 </div>
 
 <hr>
-<button onclick="otherexpenses()" class="w-100 p-2 btn btn-warning">Other Expenses</button>
+<button onclick="otherearnings()" class="w-50 p-2 btn btn-info btn-warning" style="margin-left:40px;">Other Incomes</button>
+<div id="otherearnings" style="display:none; length:100%; margin-left:20px;">
+Other Incomes
+</div>
+
+</div>
+
+<hr>
+<button onclick="otherexpenses()" class="w-100 p-2 btn btn-warning">Expenses</button>
 <div id="otherexpenses" style="display:none; length:100%;">
-Capture Other Expenses
+Capture All Expenses
 </div>
 
-<hr>
-<button onclick="otherexpensess()" class="w-100 p-2 btn btn-warning">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;
-</button>
-<div id="otherexpenses" style="display:none; length:100%;">
-Fetch Account Statement
-</div>
 
 
 </div>
@@ -208,6 +217,40 @@ function otherincomes() {
   }
 }
 
+function earnings() {
+  var x = document.getElementById("earnings");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function pensionearning() {
+  var x = document.getElementById("pensionearning");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function otherearnings() {
+  var x = document.getElementById("otherearnings");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function salaryadvanceearnings() {
+  var x = document.getElementById("salaryadvanceearnings");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 
 
