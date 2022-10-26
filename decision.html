@@ -153,11 +153,26 @@ Capture Decisions(remarks included)  Here
 <div id="decisiontrail" style="display:none; length:100%;">
 Capture Decision trail  Here
 </div>
+      
+     <hr>
+<button onclick="querry()" class="w-100 p-2 btn btn-warning">Querry </button>
+<div id="querry" style="display:none; length:100%;">
+Capture Decision trail  Here
+</div> 
+      
+      
 <hr>
 
 </div>
 <script>
-
+function querry() {
+  var x = document.getElementById("querry");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 function decisiontrail() {
   var x = document.getElementById("decisiontrail");
